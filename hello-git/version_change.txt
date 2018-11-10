@@ -1,0 +1,26 @@
+﻿#查看文件状态，看是否更改
+git status
+#查看文件是否不同
+git diff a.txt(文件名)
+#提交文件
+git commit -m"introduction"
+#再次查看文件
+git status
+#查看版本控制内容
+git log(从最近到最远提供的)
+git log --pretty=oneline(显示简洁信息)
+git log --pretty=oneline --abbrev-commit(将版本号更加简洁)
+#修改版本
+git reset --hard HEAD^(回退到上一版本)
+git reset --hard 5ce(版本的序列号)
+#查看文件内容
+cat a.txt
+#查看head指针指向的变化过程
+git reflog
+#撤销缓存区修改
+git checkout -- a.txt
+#删除文件
+git rm a.txt
+#恢复文件
+git reflog
+然后再利用版本号进行恢复

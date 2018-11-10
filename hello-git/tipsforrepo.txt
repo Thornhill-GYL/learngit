@@ -1,0 +1,22 @@
+﻿###创建远程的库
+1.必须确保GitHub上已经有了你需要的repo
+2.确保本地文件与GitHub上的文件一致
+3.注意git bash 从文件中打开
+#第一次上传文件时的命令：
+git init
+git add A.txt(此文件必须是文件夹中有的)
+git commit -m"sdjfa"(引号中是介绍文件的介绍和说明，前面的语句必须有)
+git remote add origin git@github.com:Thornhill-GYL/repo.git(这里是创建的repo的名字)
+git push -u origin master(master是一个分支，可以选择另外的分支)
+#之后的上传命令为：
+git add create.txt(新建的文件名)
+git commit -m“resonance”
+git push origin master
+
+###从远程库克隆
+git clone git@github.com:Thornhill-GYL/repo.git(这里的repo是需要从库中克隆的地址)
+#然后你的盘中就会出现这个库了
+#从这里上传文件
+git add create.txt(新建的文件名)
+git commit -m“resonance”
+git push -u origin master(第一次上传，建议使用-u，之后可以便捷使用)
