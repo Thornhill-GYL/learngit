@@ -1,0 +1,23 @@
+###tag用法
+#tag 用于方便查看commit的版本号
+git tag v0.1//用于当前HEAD
+git tag v0.1 fcsadf//用于给fcsadf的commit打上标签
+#注意：如两个分支有同样的commit，标签直接给两个分支中的
+ commit打上
+#给标签加上信息
+git tag -a v0.1 -m"information"
+#查看标签
+git tag
+#查看标签内容
+git show v0.1
+标签不是根据时间序列，而是根据字母序列
+###操作标签
+#删除本地标签
+git tag -d v0.1
+#推送标签到远程
+git push origin v0.1
+#一次性推送远端
+git push origin --tags
+#删除远程标签
+git tag -d v0.1
+git push origin :refs/tags/v0.1
